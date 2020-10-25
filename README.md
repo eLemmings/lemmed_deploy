@@ -63,9 +63,25 @@ Po w miarę dokładnym ustaleniu ostatecznej formy aplikacji nastąpiła faza im
 \ Detale co do projektowania backendu
 
 ### Konfiguracja prototypowego serwera
-\ Detale co do konfiguracji serwera
-\ Detale co do wdrażania tego czegoś
-\ ...
+**Instrukcja wdrożenia aplikacji**
+1. Upewnij się że na serwerze zainstalowane są narzędzia: [git](https://git-scm.com/), [docker](https://www.docker.com/) oraz [docker-compose](https://docs.docker.com/compose/install/). W systemie Ubuntu Linux sprowadza się to do wykonania następujących poleceń:
+```bash
+sudo apt-get install git docker docker-compose
+```
+2. Pobierz kod aplikacji z [repozytorium github](https://github.com/eLemmings/lemmed_deploy) i przejdź do głównego katalogu repozytorium.
+```bash
+git clone --recurse-submodules https://github.com/eLemmings/lemmed_deploy
+
+cd lemmed_deploy
+```
+3. Zbuduj kontenery
+```bash
+docker-compose build
+```
+4. Uruchom kontenery
+```bash
+docker-compose up
+```
 
 ### Podsumowanie
 \ Podsumowanie
@@ -99,3 +115,11 @@ Implementacja warstwy użytkownika opiera się na (...) [niech idiota od fronten
  * Interfejs Użytkownika - `Material-UI`
 
 \ Dokumentacja (coś w tym stylu przynajmniej) goes here
+
+### Wdrażanie aplikacji
+W celu zapewnienia szybkiej i prostej możliwości wdrożenia prototypu w dowolnym środowisku zastosowaliśmy konteneryzacje zrealizowaną za pomocą oprogramowania **docker**. Dzięki temu rozwiązaniu wdrożenie naszego prototypu, np. na serwerze VPS, jest bardzo łatwe i sprowadza się do wykonania kilku poleceń.
+
+**Kontenery**
+ * front - Serwer aplikacji klienckiej. Działa na porcie 80 poprzez nginx
+ * back - Serwer udostępniający API. Działa na porcie 5000 poprzez uwsgi
+ * nginx - Serwer główny działający jako reverse proxy. Pozwala on na działanie zarówno aplikacji klienkiej jak i API pod jednym publicznym adresem IP.
