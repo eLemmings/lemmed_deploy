@@ -43,16 +43,22 @@ Przez współpracę wszystkich członków zespołu ustalono przydział do poszcz
 
 Poglądowy harmonogram został zaprezentowany poniżej.
 
-***Harmonogram goes here..***
+![Harmonogram](https://github.com/eLemmings/lemmed_deploy/blob/master/images/image4.PNG)
 
 ### Projekt i wykonanie
 
 Zgodnie z harmonogramem przez następne dni powstawały:
  * Diagram przypadków użycia,
+ ![Diagram przypadków użycia](https://github.com/eLemmings/lemmed_deploy/blob/master/images/image5.PNG)
  * Projekt architektury z podziałem na frontend i backend,
+  * backend
+  ![Architektura backendu](https://github.com/eLemmings/lemmed_deploy/blob/master/images/image6.PNG)
+  * frontend
+  ![Architektura frontendu](https://github.com/eLemmings/lemmed_deploy/blob/master/images/image7.PNG)
  * Wizje wyglądu aplikacji,
+  ![Wizja działania aplikacji](https://github.com/eLemmings/lemmed_deploy/blob/master/images/image8.PNG)
  * Pomysły na rozszerzenie funkcjonalności aplikacji.
-
+  ![Pomysły funkcjonalności](https://github.com/eLemmings/lemmed_deploy/blob/master/images/image9.PNG)
 Wszystkie ważniejsze dokumenty znajdują się poniżej:
 
 ***Dokumenty go here***
@@ -104,17 +110,22 @@ Do przechowywania danych wybrano relacyjną bazę danych opartą na bibliotece `
  * Baza danych - `SQLite3`,
  * Interfejs bazy danych - `SQLAlchemy`.
 
-\ Dokumentacja (coś w tym stylu przynajmniej) goes here
+**Dokumentacja do API:** https://github.com/eLemmings/back/blob/ba5dbc5f64625b61150ce53f12a9393fba060f02/docs/api.md
 
 ### Frontend aplikacji
-Implementacja warstwy użytkownika opiera się na (...) [niech idiota od frontendu się tłumaczy ze swoich grzechów]
+Implementacja warstwy użytkownika opiera się głównie przy wykorzystaniu języka skryptowego **Javascript**. Język ten wykorzystywany jest przez przeglądarki, które różnie implementują funkcję dostępne w tym języku. Niektóre z nich nie są dostępne wszędzie.
+
+Z wyżej wymienionych powodów wybrano `Reacta`. Jest on powszechny i łatwo się go implementuje. Można w nim prosto zarządzać komponentami, dzięki czemu można myśleć o dalszym  rozwoju. Oprócz tego napisany kod trafia do transkompilatora. W nim zostaje przekształcona składnia, która nie jest zaimplementowana we wszystkich przeglądarkach.
+
+Do budowania interfejsu użytkownika wybrano Material-UI. Jest to dedykowane narzędzie do budowania komponentów w React. Przyśpiesza pracę i pozwala w prosty sposób stworzyć wygląd interfejsu, która wygląda profesjonalnie.
+
 
 **Technolgie:** (podstawa - `React`, `JavaScript`)
  * Przekierowania i logowanie - `React Router`
+ * Komponenty bezstanowe i stanowe - `React hooks, React state`
  * Manipulacja treścią - `ReactDOM`
  * Interfejs Użytkownika - `Material-UI`
-
-\ Dokumentacja (coś w tym stylu przynajmniej) goes here
+ * Moduły plików scss - `Css Modules`
 
 ### Wdrażanie aplikacji
 W celu zapewnienia szybkiej i prostej możliwości wdrożenia prototypu w dowolnym środowisku zastosowaliśmy konteneryzacje zrealizowaną za pomocą oprogramowania **docker**. Dzięki temu rozwiązaniu wdrożenie naszego prototypu, np. na serwerze VPS, jest bardzo łatwe i sprowadza się do wykonania kilku poleceń.
