@@ -137,7 +137,7 @@ Do budowania interfejsu użytkownika wybrano Material-UI. Jest to dedykowane nar
 ### Interfejs aplikacji
 
 Prototyp aplikacji w swojej ostatecznej formie wygląda bardzo podobnie do wykonanych makiet.
-![Pomysły funkcjonalności](https://github.com/eLemmings/lemmed_deploy/blob/master/images/image1.PNG)
+![Pomysły funkcjonalności](https://github.com/eLemmings/lemmed_deploy/blob/master/images/image1.png)
 
 1. Przejście do poporzedniego dziennika
 2. Przejście do następnego dziennika
@@ -149,7 +149,7 @@ Prototyp aplikacji w swojej ostatecznej formie wygląda bardzo podobnie do wykon
 
 Dodawanie dzienników opiera się na formularzu zamiesczonym poniżej.
 
-![Pomysły funkcjonalności](https://github.com/eLemmings/lemmed_deploy/blob/master/images/image1.PNG)
+![Pomysły funkcjonalności](https://github.com/eLemmings/lemmed_deploy/blob/master/images/image1.png)
 
 1. Pole z nazwą dziennika
 2. Suwak ze skalą wartości przechowywanych w dzienniku. Wartość domyślna `2`, działa jak typ **boolean**. Można mieć tylko dwa stany. Im mniejsza wartość tym niższa przeźroczystość.
