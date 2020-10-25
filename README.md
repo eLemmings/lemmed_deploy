@@ -149,7 +149,7 @@ Prototyp aplikacji w swojej ostatecznej formie wygląda bardzo podobnie do wykon
 
 Dodawanie dzienników opiera się na formularzu zamiesczonym poniżej.
 
-![Pomysły funkcjonalności](https://github.com/eLemmings/lemmed_deploy/blob/master/images/image1.png)
+![Pomysły funkcjonalności](https://github.com/eLemmings/lemmed_deploy/blob/master/images/image2.png)
 
 1. Pole z nazwą dziennika
 2. Suwak ze skalą wartości przechowywanych w dzienniku. Wartość domyślna `2`, działa jak typ **boolean**. Można mieć tylko dwa stany. Im mniejsza wartość tym niższa przeźroczystość.
