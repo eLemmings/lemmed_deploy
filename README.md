@@ -65,6 +65,7 @@ Zgodnie z harmonogramem przez następne dni powstawały:
 - Pomysły na rozszerzenie funkcjonalności aplikacji.
   ![Pomysły funkcjonalności](https://github.com/eLemmings/lemmed_deploy/blob/master/images/image9.PNG)
 - W widoku tych kafelków można doszukiwać się pewnych `wzorów`. Widać kiedy coś szło dobrze a kiedy gorzej. Ułatwia to analizę samego siebie.
+
   ![Widok wpisów](https://github.com/eLemmings/lemmed_deploy/blob/master/images/image10.png)
 
   ### Konfiguracja prototypowego serwera
